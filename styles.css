@@ -44,7 +44,7 @@ body{
 }
 .logo span{
     font-size: 35px;
-    color: #ff004f;
+    color: red;
 }
 .container{
     padding: 10px 10%;
@@ -73,7 +73,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: red;
     position: absolute;
     left:0;
     bottom: -6px;
@@ -91,7 +91,7 @@ nav ul li a:hover:after{
     margin-top: 20px;
 }
 .header-text h1 span{
-    color:#ff004f;
+    color:red;
 }
 /* =============about me section================ */
 #about{
@@ -133,7 +133,7 @@ nav ul li a:hover:after{
     content: '';
     width: 0;
     height: 3px;
-    background:#ff004f;
+    background:red;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -147,7 +147,7 @@ nav ul li a:hover:after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #ff004f;
+    color: red;
     font-size: 16px;
 
 }
@@ -195,7 +195,7 @@ nav ul li a:hover:after{
     display: inline-block;
 }
 .cards:hover{
-    background: #ff004f;
+    background: red;
     transform: translateY(-10px);
 }
 /* --------portfolio------------- */
@@ -223,7 +223,7 @@ nav ul li a:hover:after{
 .layer{
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.5),#ff004f);
+    background: linear-gradient(rgba(0,0,0,0.5),red);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -246,7 +246,7 @@ nav ul li a:hover:after{
 }
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: red;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -266,7 +266,7 @@ nav ul li a:hover:after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid red;
     padding: 14px 50px;
     border-radius: 8px;
     text-decoration: none;
@@ -274,7 +274,7 @@ nav ul li a:hover:after{
     transition: transfrom 0.5s;
 }
 .btn:hover{
-    background-color: #ff004f;
+    background-color: red;
 }
 /* ---------------------Contact---------------------- */
 .contact-left{
@@ -287,7 +287,7 @@ nav ul li a:hover:after{
      margin-top:30px;
 }
 .contact-left p i{
-    color: #ff004f;
+    color: red;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -303,12 +303,12 @@ nav ul li a:hover:after{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #ff004f;
+    color: red;
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: red;
 }
 .contact-right form{
     width: 100%;
@@ -342,7 +342,7 @@ form .btn2{
     
 }
 .copyright i{
-    color: #ff004f;
+    color: red;
 }
 /* -------------css for small screens ------------- */
 nav .fa-solid{
