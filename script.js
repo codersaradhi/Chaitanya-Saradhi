@@ -121,40 +121,40 @@ const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
 
 // add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
+// for (let i = 0; i < formInputs.length; i++) {
+//   formInputs[i].addEventListener("input", function () {
 
-    // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
-    } else {
-      formBtn.setAttribute("disabled", "");
-    }
+//     // check form validation
+//     if (form.checkValidity()) {
+//       formBtn.removeAttribute("disabled");
+//     } else {
+//       formBtn.setAttribute("disabled", "");
+//     }
 
-  });
-}
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwvfYXxFQdCPkL_8y75YcP66T7R_KB_K_bj0bgwFfsSVmwen2ePMGDx6bDWHBKfvUafZw/exec'
-const googleform = document.forms['submit-to-google-sheet']
-const msg = document.getElementById("msg")
+//   });
+// }
+// const scriptURL = 'https://script.google.com/macros/s/AKfycbwvfYXxFQdCPkL_8y75YcP66T7R_KB_K_bj0bgwFfsSVmwen2ePMGDx6bDWHBKfvUafZw/exec'
+// const googleform = document.forms['submit-to-google-sheet']
+// const msg = document.getElementById("msg")
 
-googleform.addEventListener('submit', e => {
-  e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(googleform)})
-    .then(response =>{
-        msg.innerHTML = "Message sent successfully!"
-        setTimeout(function(){
-            msg.innerHTML = ""
+// googleform.addEventListener('submit', e => {
+//   e.preventDefault()
+//   fetch(scriptURL, { method: 'POST', body: new FormData(googleform) })
+//     .then(response => {
+//       msg.innerHTML = "Message sent successfully!"
+//       setTimeout(function () {
+//         msg.innerHTML = ""
 
-            msg.innerHTML = "Thanks for contacting me 🤞🏽"
-        setTimeout(function(){
-            msg.innerHTML = ""
-        },1000)
+//         msg.innerHTML = "Thanks for contacting me 🤞🏽"
+//         setTimeout(function () {
+//           msg.innerHTML = ""
+//         }, 1000)
 
-        },1000)
-        googleform.reset();
-    })
-    .catch(error => console.error('Error!', error.message))
-})
+//       }, 1000)
+//       googleform.reset();
+//     })
+//     .catch(error => console.error('Error!', error.message))
+// })
 
 
 

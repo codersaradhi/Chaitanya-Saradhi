@@ -326,6 +326,10 @@ main {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
 }
+.info-content-role{
+  display: flex;
+  justify-content: space-between;
+}
 
 .info-content .name {
   color: var(--white-2);
@@ -427,6 +431,7 @@ main {
   gap: 15px;
   padding-bottom: 4px;
   padding-left: 7px;
+  margin-left: 2px;
 }
 
 .social-item .social-link {
@@ -1696,6 +1701,8 @@ textarea.form-input::-webkit-resizer { display: none; }
     box-shadow: none;
   }
 
+ 
+
   .navbar-list {
     gap: 30px;
     padding: 0 20px;
@@ -1828,6 +1835,13 @@ textarea.form-input::-webkit-resizer { display: none; }
     text-align: center;
   }
 
+  .info-content-role{
+    flex-direction: column;
+  } 
+  .social-list{
+    margin-top: 20px;
+  }
+  
   .info-content .title { margin: auto; }
 
   .info_more-btn { display: none; }
